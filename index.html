@@ -22,7 +22,8 @@
           { } 
         Style CSS -->
     <style>
-      .backgroundCres {
+      .backgroundCres,
+      .trait {
         background: #121e58;
         color: white;
       }
@@ -32,6 +33,11 @@
       }
       .borderCRES {
         border: 0.3px solid #c3a523;
+        padding: 2px;
+      }
+      .trait a {
+        border-bottom: 0.3px solid white;
+        color: white;
       }
       .lien {
         color: white;
@@ -65,14 +71,32 @@
         <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+              >ACCEUIL <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              ARTICLES
+            </a>
+            <div
+              class="dropdown-menu trait"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">Nouveaux</a>
+              <a class="dropdown-item" href="#">Science</a>
+              <a class="dropdown-item" href="#">Entrepreneuriat</a>
+              <a class="dropdown-item" href="#">Recherche</a>
+              <a class="dropdown-item" href="#">Academia</a>
+            </div>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -84,13 +108,49 @@
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Dropdown link
+              LE CRES
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
+            <div
+              class="dropdown-menu trait"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">A propos</a>
+              <a class="dropdown-item" href="#">Membres</a>
+              <a class="dropdown-item" href="#">Activités</a>
+              <a class="dropdown-item" href="#">Projets</a>
+              <a class="dropdown-item" href="#">Association</a>
             </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              INNOVATIONS
+            </a>
+            <div
+              class="dropdown-menu trait"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <a class="dropdown-item" href="#">Achievements</a>
+              <a class="dropdown-item" href="#">Banque d'idées</a>
+              <a class="dropdown-item" href="#">Gallery</a>
+              <a class="dropdown-item" href="#">Soumettre</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">OPPORTUNITES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><span class="borderCRES">S'INSCRIRE</span></a
+            >
           </li>
         </ul>
       </div>
