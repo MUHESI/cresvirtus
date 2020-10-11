@@ -10,20 +10,99 @@
     />
     <link rel="icon" href="img/favicon/favicon.ico" />
     <!-- Style CSS -->
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Dosis"
     />
 
+    <!--
+          { } 
+        Style CSS -->
+    <style>
+      .backgroundCres {
+        background: #121e58;
+        color: white;
+      }
+      .backgroundCres2 {
+        background: #c3a523;
+        color: white;
+      }
+      .borderCRES {
+        border: 0.3px solid #c3a523;
+      }
+      .lien {
+        color: white;
+        text-align: right;
+      }
+      .lien span {
+        color: white;
+      }
+    </style>
     <title>CRES</title>
   </head>
   <body>
+    <div class="lien backgroundCres borderCRES">
+      <span>facebook</span> <span>google +</span>
+    </div>
+
+    <nav class="navbar navbar-dark backgroundCres">
+      <a class="navbar-brand" href="#">CRES</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container-fluid">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptatum
       voluptas placeat alias laudantium repellat quidem dolores, quo quia qui!
       Minima repellendus, est ipsum debitis placeat nisi aut quasi sed?
     </div>
   </body>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </html>
