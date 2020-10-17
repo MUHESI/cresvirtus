@@ -6,14 +6,19 @@
 .backgroundCres a {
   font-size: 0.9;
 }
-.colorCres {
+/*.colorCres {
   background: white;
   color: #121e58;
+}
+*/
+.colorCres {
+  color: white;
+  opacity:0.8;
 }
 
 .backgroundCres2 {
   background: #c3a523;
-  color: white;
+  /*color: white;*/
   border-radius: 5px;
   font-size: 0.5;
   font-weight: bold;
@@ -82,19 +87,70 @@ header {
   text-align: center;
 }
 header h1 {
+  margin-top: 20%;
   font-size: 60px;
   letter-spacing: 15px;
+  transition: 0.5s;
+  opacity: 0.7;
+  transform: translateX(+5px);
+}
+header h1:hover{
+    color:#c3a523;
+    transition: 0.5s
+    /*background: linear-gradient(380deg, #aa0057, #e05a19);*/
+    transform:translateY(-10px);
+    opacity:1;
+    /*visibility: visible;*/
 }
 hr {
-  width: 50%;
+  width: 80%;
   margin: 30px auto;
-  border: 1.5px solid #fff;
+  border: 0.3px solid #fff;
 }
 header p {
   font-size: 20px;
   margin-bottom: 30px;
 }
 #launch {
+  
+  margin-top: 5%;
   font-size: 40px;
   word-spacing: 20px;
+  transition: 0.8s;
+  transform:translateX(+10px);
 }
+
+#launch:hover {
+  transition:0.8s;
+  word-spacing: 20px;
+  transform:translateX(-10px);
+}
+.mail{
+  transform:translateX(-5px);
+  transition: 0.8s;
+  color:white;
+  margin: 0;
+}
+
+.mail:hover{
+  text-decoration: none;
+  transition: 0.5s;
+  color:white;
+  transform:translateX(10px);
+  border-bottom:1px solid #c3a523;
+  opacity: 1;
+
+}
+
+
+.tweetern{
+  color: blue;
+}
+.facebookm{
+  color: blue;
+}
+.githubn{
+  color: black;
+}
+
+
