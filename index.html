@@ -67,6 +67,7 @@
   <script src="js/bootstrap.min.js"></script>
 
 <script>
+
 var countDownDate = new Date("Mars 1, 2021 00:00:00").getTime();
 var x = setInterval(function(){
     var now = new Date().getTime();
@@ -82,8 +83,11 @@ var x = setInterval(function(){
     if(distance < 0){ 
         clearInterval(x);
         document.getElementById("launch").innerHTML = "EXPIRED";
+         document.getElementById("launch").hide();
     }
-}, 1000)
+}, 1000);
+
+ 
   </script>
 
 
