@@ -12,7 +12,7 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Dosis"
@@ -133,51 +133,39 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-8" style="margin-right: 0px">
-          <div class="cardCRES backgroundCres">
-            <div class="title">
-              <h1>PLATE-FORME CRES VIRTUS EN MAINTENANCE</h1>
-            </div>
-            <div class="row">
-              <div class="body col-6">
-                dbvsdgsguggd Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Deleniti voluptatibus perferendis labore nostrum suscipit
-                tenetur, consequuntur nesciunt tempore dolore, rerum possimus
-                reiciendis iusto voluptas dicta ut quos, voluptates saepe
-                expedita.
-              </div>
-              <div class="image col-6">
-                <img
-                  class="img-fluid"
-                  src=" images/cres.png"
-                  alt="Cres"
-                  style="border-radius: 0px; border: none"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-4 col-lg-4">
-          <div class="cardCRES backgroundCres">
-            <div class="title">
-              <h1>ACTUALITES</h1>
-            </div>
-            <div class="body">
-              dbvsdgsguggd Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Deleniti voluptatibus perferendis labore nostrum suscipit
-              tenetur, consequuntur nesciunt tempore dolore, rerum possimus
-              reiciendis iusto.
-              <div class="text-center">
-                <button class="btn btn-sm backgroundCres2">Cliquer ici</button>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container-fluid">
+      <header>
+          <div class="hero">
+              <p>Building Awesome Website</p>
+        <h1>COMING SOON</h1>
+
+        <hr>
+        <p id="launch"></p>
+      </header>
       </div>
     </div>
+
+
   </body>
+  <script>
+var countDownDate = new Date("Mars 1, 2021 00:00:00").getTime();
+var x = setInterval(function(){
+    var now = new Date().getTime();
+    var distance = countDownDate - now;
+
+    var days =Math.floor(distance/(1000* 60* 24));
+    var hours =Math.floor((distance % (1000* 60* 60 *24))/(1000 * 60 *60));
+    var minutes =Math.floor((distance % (1000* 60* 60))/(1000 * 60));
+    var seconds =Math.floor((distance % (1000* 60))/1000);
+    document.getElementById("launch").innerHTML = days + "d " +hours +"h " + 
+    minutes +"m " +seconds+"s ";
+
+    if(distance < 0){ 
+        clearInterval(x);
+        document.getElementById("launch").innerHTML = "EXPIRED";
+    }
+}, 1000)
+  </script>
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
